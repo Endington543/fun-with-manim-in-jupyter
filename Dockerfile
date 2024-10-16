@@ -6,3 +6,9 @@ RUN sudo install-packages \
         ffmpeg
 
 RUN pip install manim
+
+RUN sudo install-packages \
+        build-essential \
+        python3-dev \
+        texlive \
+        texlive-latex-extra
