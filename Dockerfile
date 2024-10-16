@@ -11,6 +11,7 @@ RUN sudo install-packages \
 
 RUN sudo install-packages \
 texlive \
-texlive-latex-extra
+texlive-latex-extra \
+dvisvgm
 
 RUN pip3 install manim
