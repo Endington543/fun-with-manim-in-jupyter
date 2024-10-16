@@ -1,5 +1,8 @@
-FROM docker.io/manimcommunity/manim:v0.18.1
+FROM gitpod/workspace-python-3.11
 
-COPY --chown=manimuser:manimuser . /manim
+RUN sudo install-packages \
+        libcairo2-dev \
+        libpango1.0-dev \
+        ffmpeg
 
-RUN sudo install-packages git
+RUN pip install manim
