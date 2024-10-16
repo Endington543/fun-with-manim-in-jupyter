@@ -1,4 +1,4 @@
-FROM gitpod/workspace-python
+FROM gitpod/workspace-python-3.12
 
 RUN sudo apt update
 
@@ -9,8 +9,8 @@ RUN sudo install-packages \
         libpango1.0-dev \
         ffmpeg
 
-RUN pip3 install manim
-
 RUN sudo install-packages \
-        texlive \
-        texlive-latex-extra
+texlive \
+texlive-latex-extra
+
+RUN pip3 install manim
