@@ -1,2 +1,4 @@
 media/
 .venv/
+test.py
+__pycache__
